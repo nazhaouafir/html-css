@@ -19,8 +19,8 @@ global $redux_demo;
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
-						<h2>OUR Courses</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab molestias expedita labore, molestiae eligendi consequatur omnis vero animi quia ratione provident ipsum ad cumque eaque doloribus voluptatibus asperiores a quas.</p>
+						<h2><?php echo $redux_demo['first-section-title'];  ?></h2>
+						<p><?php echo $redux_demo['first-section-description']; ?></p>
 					</header>
 					<div class="highlights">
 					        <?php
@@ -47,10 +47,13 @@ global $redux_demo;
 			
 
 		<!-- CTA -->
-			<section id="cta" class="wrapper">
+			<section style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(<?php echo $redux_demo['second-section-image']['url']; ?>);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;" id="cta" class="wrapper">
 				<div class="inner">
-					<h2>Curabitur ullamcorper ultricies</h2>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+					<h2><?php echo $redux_demo['second-section-title'];  ?></h2>
+					<p><?php echo $redux_demo['second-section-description'];  ?></p>
 				</div>
 			</section>
 
@@ -58,8 +61,8 @@ global $redux_demo;
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
-						<h2>Faucibus consequat lorem</h2>
-						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+						<h2><?php echo $redux_demo['third-section-title']; ?></h2>
+						<p><?php echo $redux_demo['third-section-description']; ?></p>
 					</header>
 					<div class="testimonials">
 					<?php  

@@ -273,11 +273,159 @@
 
         As of Redux 3.5+, there is an extensive API. This API can be used in a mix/match mode allowing for
 
-
+// our Template
      */
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Template options', 'redux-framework-demo' ),
+        'id'               => 'template-opt',
+        'desc'             => __( 'These are template option!', 'redux-framework-demo' ),
+        'customizer_width' => '400px',
+        'icon'             => 'el el-home'
+    ) );
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Header Template', 'redux-framework-demo' ),
+        'id'               => 'template_opt_header',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'fields'           => array(
+            array(
+                'id'       => 'header-template-text-1',
+                'type'     => 'text',
+                'title'    => __( 'Header Text-1', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'text-1 for header',
+            ),
+            array(
+                'id'       => 'header-template-text-2',
+                'type'     => 'text',
+                'title'    => __( 'Header Text-2', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'text-2 for header',
+            ),
+            array(
+                'id'       => 'header-template-image',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Upload Image', 'redux-framework-demo' ),
+                'compiler' => 'true',
+                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'     => __( 'Basic media uploader with disabled URL input field.', 'redux-framework-demo' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'redux-framework-demo' ),
+                'default'  => array( 'url' => '' ),
+                //'hint'      => array(
+                //    'title'     => 'Hint Title',
+                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+                //)
+            ),
+         )
+    )     );
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'First Section', 'redux-framework-demo' ),
+        'id'               => 'template_opt_first_section',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'fields'           => array(
+            array(
+                'id'       => 'template-first-section-title',
+                'type'     => 'text',
+                'title'    => __( 'title of first Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'title of this Section',
+            ),
+            array(
+                'id'       => 'template-first-section-description',
+                'type'     => 'text',
+                'title'    => __( 'Description of first Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'Description of this section',
+                ),
+                                    )
+                                    )     
+                     );
+    
+    Redux::setSection( $opt_name, array(
+    'title'            => __( 'The Second Section', 'redux-framework-demo' ),
+    'id'               => 'template_opt_second_section',
+    'subsection'       => true,
+    'customizer_width' => '450px',
+    'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+    'fields'           => array(
+        array(
+            'id'       => 'template-second-section-title',
+            'type'     => 'text',
+            'title'    => __( 'title of second Section', 'redux-framework-demo' ),
+            'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+            'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+            'default'  => 'title of this Section',
+        ),
+        array(
+            'id'       => 'template-second-section-description',
+            'type'     => 'text',
+            'title'    => __( 'Description of second Section', 'redux-framework-demo' ),
+            'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+            'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+            'default'  => 'Description of this section',
+            ),
+        array(
+                'id'       => 'template-second-section-image',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Upload Image', 'redux-framework-demo' ),
+                'compiler' => 'true',
+                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'     => __( 'Basic media uploader with disabled URL input field.', 'redux-framework-demo' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'redux-framework-demo' ),
+                'default'  => array( 'url' => '' ),
+                //'hint'      => array(
+                //    'title'     => 'Hint Title',
+                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+                //)
+            ),
+                                )
+                                )     
+                    );
+        
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'the third Section', 'redux-framework-demo' ),
+        'id'               => 'template_opt_third_section',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'fields'           => array(
+            array(
+                'id'       => 'template-third-section-title',
+                'type'     => 'text',
+                'title'    => __( 'title of third Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'title of this Section',
+            ),
+            array( 
+                'id'       => 'template-third-section-description',
+                'type'     => 'text',
+                'title'    => __( 'Description of third Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'Description of this section',
+                ),
+                                    )
+                                    )     
+                        );
+
+
+
+
+
+
     // START my own fields
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'General options', 'redux-framework-demo' ),
+        'title'            => __( 'Genaral options', 'redux-framework-demo' ),
         'id'               => 'general-opt',
         'desc'             => __( 'These are general option!', 'redux-framework-demo' ),
         'customizer_width' => '400px',
@@ -355,6 +503,101 @@
             ),
          )
     )     );
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'First Section', 'redux-framework-demo' ),
+        'id'               => 'general_opt_first_section',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'fields'           => array(
+            array(
+                'id'       => 'first-section-title',
+                'type'     => 'text',
+                'title'    => __( 'title of first Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'title of this Section',
+            ),
+            array(
+                'id'       => 'first-section-description',
+                'type'     => 'text',
+                'title'    => __( 'Description of first Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'Description of this section',
+                ),
+                                    )
+                                    )     
+                     );
+    
+    Redux::setSection( $opt_name, array(
+    'title'            => __( 'The Second Section', 'redux-framework-demo' ),
+    'id'               => 'general_opt_second_section',
+    'subsection'       => true,
+    'customizer_width' => '450px',
+    'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+    'fields'           => array(
+        array(
+            'id'       => 'second-section-title',
+            'type'     => 'text',
+            'title'    => __( 'title of second Section', 'redux-framework-demo' ),
+            'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+            'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+            'default'  => 'title of this Section',
+        ),
+        array(
+            'id'       => 'second-section-description',
+            'type'     => 'text',
+            'title'    => __( 'Description of second Section', 'redux-framework-demo' ),
+            'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+            'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+            'default'  => 'Description of this section',
+            ),
+        array(
+                'id'       => 'second-section-image',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Upload Image', 'redux-framework-demo' ),
+                'compiler' => 'true',
+                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'     => __( 'Basic media uploader with disabled URL input field.', 'redux-framework-demo' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'redux-framework-demo' ),
+                'default'  => array( 'url' => '' ),
+                //'hint'      => array(
+                //    'title'     => 'Hint Title',
+                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+                //)
+            ),
+                                )
+                                )     
+                    );
+        
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'the third Section', 'redux-framework-demo' ),
+        'id'               => 'general_opt_third_section',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'fields'           => array(
+            array(
+                'id'       => 'third-section-title',
+                'type'     => 'text',
+                'title'    => __( 'title of third Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'title of this Section',
+            ),
+            array( 
+                'id'       => 'third-section-description',
+                'type'     => 'text',
+                'title'    => __( 'Description of third Section', 'redux-framework-demo' ),
+                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
+                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
+                'default'  => 'Description of this section',
+                ),
+                                    )
+                                    )     
+                        );
 
 
 

@@ -1,14 +1,21 @@
 <?php
 /*
-Template Name: Homepage template
+Template Name: Inner template
 */
+?>
+<?php
+global $redux_demo;
 ?>
 <?php get_header();   ?>
 		<!-- Banner -->
-			<section id="banner">
+			<section style="  background-image: url(<?php echo $redux_demo['header-image']['url']; ?>);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;"
+							 id="banner">
 				<div class="inner">
-					<h1>Digital Heroes</h1>
-					<h2>Hello World!</h2>
+					<h1><?php echo $redux_demo['header-text-1']; ?></h1>
+					<h2><?php echo $redux_demo['header-text-2']; ?></h2>
 				</div>
 				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
 			</section>
@@ -17,35 +24,24 @@ Template Name: Homepage template
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
-						<h2>OUR Courses</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab molestias expedita labore, molestiae eligendi consequatur omnis vero animi quia ratione provident ipsum ad cumque eaque doloribus voluptatibus asperiores a quas.</p>
+						<h2><?php echo $redux_demo['first-section-title'];  ?></h2>
+						<p><?php echo $redux_demo['first-section-description']; ?></p>
 					</header>
 					<div class="highlights">
-					        <?php
-							if(have_posts()){
-								while(have_posts()){
-									the_post();
-									?>	
-					<section>
-							<div class="content">
-								<header>
-									<a href="<?php the_permalink();?>"><?php the_post_thumbnail("thumbnail"); ?></a>
-									<h3 style="color:#861e26"><?php the_title();  ?></h3>
-								</header>
-								<p><?php  the_excerpt(); ?></p>
-							</div>
-						</section>
-						<?php }; }  ?>
+					   <!-- ******************* -->
 					</div>
 				</div>
 			</section>
 			
 
 		<!-- CTA -->
-			<section id="cta" class="wrapper">
+			<section style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(<?php echo $redux_demo['second-section-image']['url']; ?>);
+							background-position: bottom;
+							background-repeat: no-repeat;
+							background-size: cover;" id="cta" class="wrapper">
 				<div class="inner">
-					<h2>Curabitur ullamcorper ultricies</h2>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+					<h2><?php echo $redux_demo['second-section-title'];  ?></h2>
+					<p><?php echo $redux_demo['second-section-description'];  ?></p>
 				</div>
 			</section>
 
@@ -53,49 +49,11 @@ Template Name: Homepage template
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
-						<h2>Faucibus consequat lorem</h2>
-						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+						<h2><?php echo $redux_demo['third-section-title']; ?></h2>
+						<p><?php echo $redux_demo['third-section-description']; ?></p>
 					</header>
 					<div class="testimonials">
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="" alt="" />
-									</div>
-									<p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
+				<!-- ---------- -->
 					</div>
 				</div>
 			</section>
