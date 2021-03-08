@@ -24,8 +24,8 @@ global $redux_demo;
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
-						<h2><?php echo $redux_demo['first-section-title'];  ?></h2>
-						<p><?php echo $redux_demo['first-section-description']; ?></p>
+						<h2><?php echo $redux_demo['template-first-section-title'];  ?></h2>
+						<p><?php echo $redux_demo['template-first-section-description']; ?></p>
 					</header>
 					<div class="highlights">
 					   <!-- ******************* -->
@@ -34,28 +34,7 @@ global $redux_demo;
 			</section>
 			
 
-		<!-- CTA -->
-			<section style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(<?php echo $redux_demo['second-section-image']['url']; ?>);
-							background-position: bottom;
-							background-repeat: no-repeat;
-							background-size: cover;" id="cta" class="wrapper">
-				<div class="inner">
-					<h2><?php echo $redux_demo['second-section-title'];  ?></h2>
-					<p><?php echo $redux_demo['second-section-description'];  ?></p>
-				</div>
-			</section>
 
-		<!-- Testimonials -->
-			<section class="wrapper">
-				<div class="inner">
-					<header class="special">
-						<h2><?php echo $redux_demo['third-section-title']; ?></h2>
-						<p><?php echo $redux_demo['third-section-description']; ?></p>
-					</header>
-					<div class="testimonials">
-				<!-- ---------- -->
-					</div>
-				</div>
-			</section>
+		
 
 <?php get_footer(); ?>

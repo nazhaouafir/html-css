@@ -1,0 +1,6 @@
+Mar 08 2021 01:58:59
+{"Number":2,"Message":"rmdir(C:\\wamp64\\www\\monsite\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\3akec4fnmqn1): Directory not empty","File":"C:\\wamp64\\www\\monsite\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":72}
+
+Mar 08 2021 01:58:59
+{"Number":2,"Message":"filesize(): stat failed for C:\\wamp64\\www\\monsite\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\3akec4fnmqn1\\localhost-monsite-20210308-015856-p964yp.wpress","File":"C:\\wamp64\\www\\monsite\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-archiver.php","Line":231}
+

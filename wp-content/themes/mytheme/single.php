@@ -30,7 +30,7 @@ global $redux_demo;
 									<a href="#"><?php the_post_thumbnail("thumbnail"); ?></a>
 									<h3 style="color:#861e26"><?php the_title();  ?></h3>
 								</header>
-								<p><?php the_excerpt();
+								<p><?php the_content();
 								 ?></p>
 							</div>
 						</section>
